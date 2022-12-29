@@ -7,10 +7,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.thompson.mccourse.MCCourseMod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.thompson.mccourse.item.custom.CoalSliverItem;
-import net.thompson.mccourse.item.custom.DowsingRodItem;
-import net.thompson.mccourse.item.custom.LevitationSwordItem;
-import net.thompson.mccourse.item.custom.PaxelItem;
+import net.thompson.mccourse.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -62,7 +59,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> COBALT_HELMET = ITEMS.register("cobalt_helmet",
-            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.HEAD,
+            () -> new ModArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_CHESTPLATE = ITEMS.register("cobalt_chestplate",
