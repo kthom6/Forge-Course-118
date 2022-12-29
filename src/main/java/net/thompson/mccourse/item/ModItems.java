@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.thompson.mccourse.item.custom.CoalSliverItem;
 import net.thompson.mccourse.item.custom.DowsingRodItem;
+import net.thompson.mccourse.item.custom.PaxelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -50,6 +51,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> COBALT_HOE = ITEMS.register("cobalt_hoe",
             () -> new HoeItem(ModTiers.COBALT, 0, 0f,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+
+    public static final RegistryObject<Item> COBALT_PAXEL = ITEMS.register("cobalt_paxel",
+            () -> new PaxelItem(ModTiers.COBALT, 0, 0f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
 
