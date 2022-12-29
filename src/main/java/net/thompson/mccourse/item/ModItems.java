@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.thompson.mccourse.item.custom.CoalSliverItem;
 import net.thompson.mccourse.item.custom.DowsingRodItem;
+import net.thompson.mccourse.item.custom.LevitationSwordItem;
 import net.thompson.mccourse.item.custom.PaxelItem;
 
 public class ModItems {
@@ -34,7 +35,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> COBALT_SWORD = ITEMS.register("cobalt_sword",
-            () -> new SwordItem(ModTiers.COBALT, 2, 3f,
+            () -> new LevitationSwordItem(ModTiers.COBALT, 2, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_PICKAXE = ITEMS.register("cobalt_pickaxe",
